@@ -1,0 +1,97 @@
+p {
+    font-size: 20px;
+}
+
+.img-one {
+    background-image: url("../images/bg-img1.png");
+}
+
+.img-two {
+    background-image: url("../images/bg-img2.png");
+}
+
+.bg-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    height: 540px;
+}
+
+.bg-img .logo {
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+}
+
+.bg-img .bg-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(90, 90, 90, .7), rgba(232, 232, 232, .1));
+}
+
+.bg-img .bg-text .title {
+    font-size: 64px;
+    width: 75%;
+    text-shadow: 10px 0 4px #52453d;
+}
+
+.grad-border {
+    height: 14px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.left-border,
+.right-border {
+    width: 50%;
+    border-bottom: 15px solid #695f52;
+    display: inline-block;
+}
+
+.grad-border .left-border {
+    border-image: linear-gradient(270deg, #9c0317, #d30826) 1;
+}
+
+.grad-border .right-border {
+    border-image: linear-gradient(90deg, #9c0317, #d30826) 1;
+}
+
+.details {
+    background-color: #f2f2f2;
+}
+
+.details p {
+    font-weight: 600;
+}
+
+.breadcrumb {
+    background-color: transparent !important;
+}
+
+.breadcrumb-bar .breadcrumb-item+.breadcrumb-item::before {
+    content: "?";
+}
+
+.btn-red {
+    color: white !important;
+    font-size: 24px !important;
+    background-image: radial-gradient(#9c0317, #d10926);
+}
+
+.btn-blue {
+    color: white;
+    font-size: 22px !important;
+    font-weight: 600 !important;
+    background-color: #224194;
+}
+
+@media screen and (max-width: 768px) {
+    .bg-text .title {
+        width: 100% !important;
+        font-size: 42px !important;
+    }
+}
